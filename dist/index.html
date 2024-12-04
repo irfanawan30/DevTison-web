@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  </head>
+  <body style="font-family: 'Poppins';">
+    <nav
+  class="h-[700px] sm:h-[800px] md:h-[900px] bg-cover bg-center"
+  style="background-image: url(/src/images/Ellipse\ 1.png);"
+>
+  <!-- Navigation -->
+  <div class="container mx-auto px-4 py-6 flex items-center justify-between">
+    <!-- Logo -->
+    <div class="text-white font-bold text-lg sm:text-xl">Devtisans</div>
+
+    <!-- Hamburger Menu (Mobile) -->
+    <div class="md:hidden">
+      <button id="menuToggle" class="text-white focus:outline-none">
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex gap-6 text-white items-center">
+      <li><a href="#" class="hover:text-gray-300 font-semibold">Services</a></li>
+      <li><a href="#" class="hover:text-gray-300 font-semibold">Projects</a></li>
+      <li><a href="#" class="hover:text-gray-300 font-semibold">Careers</a></li>
+      <li><a href="#" class="hover:text-gray-300 font-semibold">Blog</a></li>
+      <li><a href="#" class="hover:text-gray-300 font-semibold">About</a></li>
+    </ul>
+
+    <!-- Button -->
+    <div class="hidden md:block">
+      <button
+        class="text-white px-4 py-2 border border-white hover:bg-white hover:text-blue-600 duration-300 font-semibold"
+      >
+        Schedule a Call
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobileMenu" class="hidden bg-[#350E9E] md:hidden">
+    <ul class="flex flex-col gap-4 text-white p-4">
+      <li><a href="#" class="hover:text-gray-300 font-semibold">Services</a></li>
+      <li><a href="#" class="hover:text-gray-300 font-semibold">Projects</a></li>
+      <li><a href="#" class="hover:text-gray-300 font-semibold">Careers</a></li>
+      <li><a href="#" class="hover:text-gray-300 font-semibold">Blog</a></li>
+      <li><a href="#" class="hover:text-gray-300 font-semibold">About</a></li>
+      <li>
+        <button
+          class="bg-white text-[#350E9E] px-4 py-2 rounded-lg hover:bg-[#4B23E6] hover:text-white transition duration-300 w-full font-semibold"
+        >
+          Schedule a Call
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="container mx-auto px-4 text-center">
+    <h1
+      class="font-sans text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white pt-10 sm:pt-12 md:pt-16"
+    >
+      Engineering Digital Masterpieces for the Modern Future
+    </h1>
+    <p
+      class="text-lg sm:text-xl md:text-2xl text-[#BA9CFF] leading-6 sm:leading-7 md:leading-8 pt-4 sm:pt-5"
+    >
+      Empowering Businesses with Cutting-Edge Digital Solutions <br class="hidden sm:block" />
+      and Innovative Technology Strategies 🚀
+    </p>
+    <div class="flex justify-center mt-6">
+      <a
+        class="border px-4 py-2 sm:px-6 sm:py-3 bg-white text-[#350E9E] rounded cursor-pointer hover:bg-slate-200 transition font-semibold text-sm sm:text-base"
+      >
+        See Our Work
+      </a>
+    </div>
+  </div>
+</nav>
+
+ 
+  <!-- <div class="">
+    <img src="/src/images/svg (1) 1.png" alt="" />
+  </div>  -->
+
+  <!-- Services Section-->
+  <div>
+    <div>
+      <h1 class="text-center text-4xl sm:text-5xl lg:text-6xl font-medium text-[#000000]">
+        Our Digital Engineering Solutions
+      </h1>
+      <p class="text-center font-normal text-[20px] sm:text-[24px] lg:text-[26px] mt-[12px] text-[#888585] leading-[36px] sm:leading-[39px]">
+        We don't just code. We craft digital experiences that drive business growth.
+      </p>
+    </div>
+    <!-- cards -->
+    <div class="container mx-auto w-full sm:w-[100%] lg:w-[1200px] mt-[100px] grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Card 1 -->
+      <div class="bg-[#6234DF] shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105 w-full sm:w-[80%] md:w-[90%] lg:w-[300px]">
+        <div class="p-6 flex flex-col items-center">
+          <div class="circle w-20 h-20 bg-[#6234DF] p-8 rounded-full flex items-center justify-center -mt-20">
+            <i class="fa-solid fa-code text-white" style="font-size: x-large;"></i>
+          </div>
+          <h2 class="text-white text-center text-xl font-bold mt-3">
+            Web Application Development
+          </h2>
+          <p class="text-white text-center text-base mt-4 text-balance">
+            We develop custom web applications that solve your unique business challenges.
+          </p>
+        </div>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="bg-[#DF3453] shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105 w-full sm:w-[80%] md:w-[90%] lg:w-[300px]">
+        <div class="p-6 flex flex-col items-center">
+          <div class="circle w-20 h-20 bg-[#DF3453] p-8 rounded-full flex items-center justify-center -mt-20">
+            <i class="fa-regular fa-building text-white" style="font-size: x-large;"></i>
+          </div>
+          <h2 class="text-white text-center text-xl font-bold mt-3">
+            Enterprise Solutions
+          </h2>
+          <p class="text-white text-center text-base mt-4 text-balance">
+            We design comprehensive software systems that <br> streamline your business operations.
+          </p>
+        </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="bg-[#DF7E34] shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105 w-full sm:w-[80%] md:w-[90%] lg:w-[300px]">
+        <div class="p-6 flex flex-col items-center">
+          <div class="circle w-20 h-20 bg-[#DF7E34] p-8 rounded-full flex items-center justify-center -mt-20">
+            <i class="fa-solid fa-mobile-screen-button text-white" style="font-size: x-large;"></i>
+          </div>
+          <h2 class="text-white text-center text-xl font-bold mt-3">
+            Mobile App Development
+          </h2>
+          <p class="text-white text-center text-base mt-4 text-balance">
+            We create mobile apps that connect you with your <br> customers across iOS and <br>Android platforms.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    
+    <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:w-[1200px]">
+      <div>
+        <!-- Responsive Heading -->
+        <h1 class="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[#000000] mt-10 sm:mt-16 lg:mt-20">
+          Crafting the Future of Development with Precision and Passion
+        </h1>
+    
+        <!-- Image with Centering -->
+        <div class="flex justify-center mt-10 sm:mt-16 lg:mt-20">
+          <img 
+            src="/src/images/Team .png" 
+            alt="Team working together illustration" 
+            class="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl"
+          >
+        </div>
+    
+        <!-- Responsive Paragraph -->
+        <p class="text-center mt-8 sm:mt-10 lg:mt-12 text-[#333333] text-sm sm:text-base md:text-lg leading-relaxed">
+          Devtisans brings together the precision of development and the creativity of artisans to craft cutting-edge 
+          digital solutions. We don't just build websites and applications; we create experiences that elevate businesses 
+          and empower users.
+        </p>
+      </div>
+    </div>
+    
+    <div class="container mx-auto flex flex-col sm:flex-row mt-10 sm:mt-20 gap-6 justify-center px-4">
+      <!-- Mission Section -->
+      <div class="bg-[#F2F2F2] p-6 sm:p-8 w-full sm:w-[45%]">
+        <h1 class="text-2xl sm:text-3xl font-semibold">Our Mission</h1>
+        <p class="mt-4 text-sm sm:text-base leading-relaxed">
+          "Our mission is simple: to seamlessly blend technology with art. We are dedicated to helping businesses transform 
+          through beautifully crafted digital products and innovative solutions that are not only functional but also 
+          intuitive and delightful."
+        </p>
+      </div>
+    
+      <!-- Vision Section -->
+      <div class="bg-[#F2F2F2] p-6 sm:p-8 w-full sm:w-[45%]">
+        <h1 class="text-2xl sm:text-3xl font-semibold">Our Vision</h1>
+        <p class="mt-4 text-sm sm:text-base leading-relaxed">
+          "To be the go-to partner for businesses looking to thrive in the digital age. We aim to push the boundaries of 
+          creativity and technology, delivering impactful solutions with a perfect balance of development expertise 
+          and artistic innovation."
+        </p>
+      </div>
+    </div>
+    
+    <div class="text-center mt-10 sm:mt-20 px-4">
+      <h1 class="text-2xl sm:text-3xl md:text-4xl font-semibold border-b-4 border-[#6233DF30] inline-block">
+        Core Values
+      </h1>
+    </div>
+    
+    <!-- cards -->
+    <div class="container mx-auto px-4 sm:px-6 md:px-8 mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <!-- Innovation -->
+      <div class="bg-[#FBFBFB] border border-[#F3F3F3] p-6 text-center rounded-lg">
+        <div class="flex gap-2 justify-center items-center pt-5">
+          <i class="fa-solid fa-lightbulb text-[#7767A2] text-3xl"></i>
+          <h1 class="text-xl sm:text-2xl text-[#7767A2] font-semibold">Innovation</h1>
+        </div>
+        <p class="pt-5 text-sm sm:text-base leading-relaxed">
+          We never stop learning and pushing the boundaries of what's possible.
+        </p>
+      </div>
+    
+      <!-- Craftsmanship -->
+      <div class="bg-[#FBFBFB] border border-[#F3F3F3] p-6 text-center rounded-lg">
+        <div class="flex gap-2 justify-center items-center pt-5">
+          <i class="fa-solid fa-screwdriver-wrench text-[#7767A2] text-3xl"></i>
+          <h1 class="text-xl sm:text-2xl text-[#7767A2] font-semibold">Craftsmanship</h1>
+        </div>
+        <p class="pt-5 text-sm sm:text-base leading-relaxed">
+          We treat every project like a work of art, paying attention to every detail.
+        </p>
+      </div>
+    
+      <!-- Collaboration -->
+      <div class="bg-[#FBFBFB] border border-[#F3F3F3] p-6 text-center rounded-lg">
+        <div class="flex gap-2 justify-center items-center pt-5">
+          <i class="fa-solid fa-handshake text-[#7767A2] text-3xl"></i>
+          <h1 class="text-xl sm:text-2xl text-[#7767A2] font-semibold">Collaboration</h1>
+        </div>
+        <p class="pt-5 text-sm sm:text-base leading-relaxed">
+          We believe in the power of collaboration—both with our clients and within our team.
+        </p>
+      </div>
+    
+      <!-- Integrity -->
+      <div class="bg-[#FBFBFB] border border-[#F3F3F3] p-6 text-center rounded-lg">
+        <div class="flex gap-2 justify-center items-center pt-5">
+          <i class="fa-solid fa-scale-balanced text-[#7767A2] text-3xl"></i>
+          <h1 class="text-xl sm:text-2xl text-[#7767A2] font-semibold">Integrity</h1>
+        </div>
+        <p class="pt-5 text-sm sm:text-base leading-relaxed">
+          We do business the right way, building trust and long-term relationships.
+        </p>
+      </div>
+    </div>
+    
+    <!-- clients -->
+    <div class="container mx-auto px-4 sm:px-6 md:px-8">
+      <h1 class="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#000000] mt-10 sm:mt-16 lg:mt-20">
+        Building Success with Our Valued Clients
+      </h1>
+    </div>
+    
+
+     <!-- slider -->
+     <div class="relative overflow-hidden w-full h-32 sm:h-40 md:h-52">
+      <!-- Animated Track -->
+      <div class="flex items-center w-full animate-slide">
+        <img 
+          src="/src/images/logo 1.png" 
+          class="w-[100px] sm:w-[150px] md:w-[219px] h-auto mx-4" 
+          alt="Logo 1">
+        <img 
+          src="/src/images/Umar Fuels Logo - Original - 5000x5000 1.png" 
+          class="w-[80px] sm:w-[120px] md:w-[150px] h-auto mx-4" 
+          alt="Umar Fuels Logo">
+        <img 
+          src="/src/images/Lifetime Fitness Logo - Original - 5000x5000 1.png" 
+          class="w-[120px] sm:w-[160px] md:w-[200px] h-auto mx-4" 
+          alt="Lifetime Fitness Logo">
+        <img 
+          src="/src/images/Unique Builders Logo - Original - 5000x5000 1.png" 
+          class="w-[120px] sm:w-[160px] md:w-[200px] h-auto mx-4" 
+          alt="Unique Builders Logo">
+        <img 
+          src="/src/images/Union Pipes Logo - Original - 5000x5000 1.png" 
+          class="w-[120px] sm:w-[160px] md:w-[200px] h-auto mx-4" 
+          alt="Union Pipes Logo">
+        <img 
+          src="/src/images/Al Mahmood Transport Logo - Original - 5000x5000 1.png" 
+          class="w-[150px] sm:w-[250px] md:w-[350px] h-auto mx-4" 
+          alt="Al Mahmood Transport Logo">
+      </div>
+    </div>
+    
+    <div class="bg-[#12212D]">
+      <div class="container mx-auto grid gap-8 p-6 sm:p-10 sm:grid-cols-2 lg:grid-cols-4">
+        <!-- Projects Completed -->
+        <div class="flex flex-col items-center">
+          <i class="fa-solid fa-users text-[#9ABBD64D] text-3xl sm:text-4xl"></i>
+          <h1 class="text-[#9ABBD6] font-semibold text-4xl sm:text-5xl lg:text-6xl text-center pt-3">40+</h1>
+          <p class="text-[#D0E9FD] font-extralight text-xs sm:text-sm text-center pt-2">Projects Completed</p>
+        </div>
+    
+        <!-- Satisfied Clients -->
+        <div class="flex flex-col items-center">
+          <i class="fa-solid fa-circle-check text-[#9ABBD64D] text-3xl sm:text-4xl"></i>
+          <h1 class="text-[#9ABBD6] font-semibold text-4xl sm:text-5xl lg:text-6xl text-center pt-3">300+</h1>
+          <p class="text-[#D0E9FD] font-extralight text-xs sm:text-sm text-center pt-2">Satisfied Clients</p>
+        </div>
+    
+        <!-- Successful Products -->
+        <div class="flex flex-col items-center">
+          <i class="fa-solid fa-box-open text-[#9ABBD64D] text-3xl sm:text-4xl"></i>
+          <h1 class="text-[#9ABBD6] font-semibold text-4xl sm:text-5xl lg:text-6xl text-center pt-3">10+</h1>
+          <p class="text-[#D0E9FD] font-extralight text-xs sm:text-sm text-center pt-2">Successful Products</p>
+        </div>
+    
+        <!-- Years of Experience -->
+        <div class="flex flex-col items-center">
+          <img src="/src/images/Vector.png" class="w-8 h-8 sm:w-10 sm:h-10" alt="Experience Icon">
+          <h1 class="text-[#9ABBD6] font-semibold text-4xl sm:text-5xl lg:text-6xl text-center pt-3">5+</h1>
+          <p class="text-[#D0E9FD] font-extralight text-xs sm:text-sm text-center pt-2">Years Experience</p>
+        </div>
+      </div>
+    </div>
+    
+  
+  
+  
+  </body>
+  <!-- JavaScript for Toggle -->
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+
+
+  </script>
+</html>
